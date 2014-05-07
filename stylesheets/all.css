@@ -1,0 +1,230 @@
+@font-face {
+  font-family: lato;
+  src: url(../Lato-Reg.ttf); }
+
+/* line 8, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+h1, h2, h3 {
+  margin: 0;
+  padding: 0; }
+
+/* line 13, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px; }
+
+/* line 19, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+body {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #7D7D7D !important; }
+
+/* line 25, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+.container {
+  width: 980px;
+  margin: 0 auto; }
+
+/* line 30, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+.float-left {
+  float: left; }
+
+/* line 34, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+.float-right {
+  float: right; }
+
+/* line 38, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+.clear {
+  clear: both; }
+
+/* line 42, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#top-info-header {
+  border-bottom: solid #ECEEF0 1px;
+  padding: 15px 0 15px 0;
+  color: #3B4A5D;
+  font-size: 13px;
+  margin-bottom: 15px; }
+  /* line 49, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #top-info-header .phone-number {
+    width: 130px;
+    border-right: solid #ECEEF0 1px;
+    margin-right: 15px; }
+    /* line 54, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #top-info-header .phone-number .fa-phone {
+      margin-right: 10px; }
+    /* line 58, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #top-info-header .phone-number span {
+      position: relative;
+      top: -2px; }
+  /* line 64, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #top-info-header .email {
+    width: 220px; }
+    /* line 67, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #top-info-header .email .fa-envelope-o {
+      margin-right: 10px; }
+    /* line 71, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #top-info-header .email span {
+      position: relative;
+      top: -2px; }
+  /* line 77, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #top-info-header .social-icons {
+    width: 200px; }
+    /* line 80, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #top-info-header .social-icons .face-book {
+      border-right: solid #ECEEF0 1px;
+      border-left: solid #ECEEF0 1px;
+      width: 40px;
+      text-align: center; }
+    /* line 87, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #top-info-header .social-icons .yelp {
+      border-right: solid #ECEEF0 1px;
+      width: 40px;
+      text-align: center; }
+
+/* line 95, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#main-nav {
+  margin-bottom: 20px; }
+  /* line 97, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #main-nav #main-logo-container {
+    width: 120px; }
+    /* line 99, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #main-nav #main-logo-container img {
+      width: 120px; }
+  /* line 104, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #main-nav #nav-items {
+    width: 800px;
+    margin-top: 5px;
+    text-align: right; }
+    /* line 110, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #main-nav #nav-items ul li {
+      display: inline-block;
+      margin-right: 55px;
+      padding-top: 15px; }
+      /* line 115, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+      #main-nav #nav-items ul li a {
+        color: #3B4A5D;
+        text-decoration: none; }
+
+/* line 124, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#main-banner {
+  border: solid #ECEEF0 1px;
+  padding-top: 80px;
+  padding-bottom: 300px; }
+  /* line 130, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #main-banner .left-banner-content img {
+    width: 500px; }
+  /* line 135, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #main-banner .right-banner-content {
+    position: relative;
+    top: -50px; }
+    /* line 138, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #main-banner .right-banner-content h1 {
+      color: #565555;
+      font-weight: 100;
+      font-size: 50px; }
+
+/* line 146, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#mid-section {
+  background: black;
+  padding: 25px 0 30px 0;
+  color: white;
+  margin-bottom: 20px; }
+  /* line 152, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #mid-section .contact-button {
+    background: #343434;
+    padding: 20px 40px 20px 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer; }
+    /* line 158, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #mid-section .contact-button:hover {
+      background: #4a4a4a; }
+
+/* line 164, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#product-section {
+  margin: 40px 0 40px 0; }
+  /* line 167, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #product-section ul li {
+    display: inline-block;
+    margin-right: 10px; }
+  /* line 172, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #product-section img {
+    width: 140px; }
+
+/* line 177, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#footer {
+  background: #363636;
+  height: 300px;
+  padding-top: 40px; }
+  /* line 182, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #footer h4 {
+    color: white;
+    font-weight: bold; }
+  /* line 187, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #footer p {
+    color: white;
+    font-size: 14px; }
+
+/* line 193, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#sub-page-header {
+  background: #000000;
+  padding: 30px 0 40px 0; }
+  /* line 197, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #sub-page-header h1 {
+    color: white; }
+
+/* line 202, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#about-top-section {
+  margin: 50px 0 50px 0; }
+  /* line 205, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #about-top-section strong {
+    color: black; }
+  /* line 209, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #about-top-section h3 {
+    color: black; }
+  /* line 213, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #about-top-section p {
+    position: relative;
+    top: -2px; }
+
+/* line 219, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#about-bottom-section {
+  border-top: solid #ECEEF0 1px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  /* line 225, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #about-bottom-section ul li {
+    list-style: none;
+    margin-bottom: 10px; }
+    /* line 228, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #about-bottom-section ul li img {
+      width: 170px; }
+  /* line 233, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #about-bottom-section .about-us-bottom-section {
+    width: 500px; }
+    /* line 235, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+    #about-bottom-section .about-us-bottom-section h3 {
+      color: #111155; }
+
+/* line 241, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#map {
+  width: 100%; }
+
+/* line 245, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+#contact-us-container {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  /* line 251, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #contact-us-container #contact-us-form-container form input {
+    width: 450px;
+    height: 28px;
+    border: solid #cfcfcf 1px;
+    background: #ECEEF0; }
+  /* line 257, /Users/Ricky/Sites/auto_tint_specialist/source/stylesheets/all.scss */
+  #contact-us-container #contact-us-form-container form textarea {
+    width: 100%;
+    height: 300px;
+    border: solid #cfcfcf 1px;
+    background: #ECEEF0; }
