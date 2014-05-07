@@ -13,24 +13,21 @@
     %p Please fill out the form to request a free estimate and an auto tint specialist will be in contact with you soon with any questions you may have.
     #contact-us-form-container
       %br
-      %form
-        .float-left
-          %p Name
-          %input
-        .float-right
-          %p Email
-          %input
-        .clear
-        %br
-        %br
-        .float-left
-          %p Phone
-          %input
-        .float-right
-          %p Vehicle Make/Model/Year
-          %input
-        .clear
-        %br
-        %br
-        %p Message
-        %textarea
+      %form{ :action => "", :method => "post"}
+        %fieldset
+          %ol
+            %li
+              %label{:for => "name"} Name:
+              %input{:type => "text", :name => "name", :class => "text"}
+            %li
+              %label{:for => "mail"} email:
+              %input{:type => "text", :name => "mail", :class => "text"}
+            %li
+              %label{:for => "body"} Message:
+              %textarea{:name => "body"}
+          %input{:type => "submit", :value => "Send", :class => "button"}
+/ - data.people.features.each do |feature| 
+/   .feature
+/     %img{:src => "/images/#{feature.image}"}
+/     %h3=feature.title
+/     %p=feature.text
