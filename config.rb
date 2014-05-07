@@ -2,8 +2,10 @@
 # Compass
 ###
 
-require './mailer'
-
+require 'source/mailer'
+map('/contact.html') do
+  run MailForms
+end
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
