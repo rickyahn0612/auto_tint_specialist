@@ -24,7 +24,7 @@
           <span class='float-left'>admin@autotintspecialist.com</span>
         </div>
         <div class='social-icons float-right'>
-          Mon - Sat 9:00 a.m - 6:00 p.m.
+          Mon - Sat 9:00 a.m. - 6:00 p.m.
         </div>
         <div class='clear'></div>
       </div>
@@ -63,42 +63,41 @@
         <p>Please fill out the form to request a free estimate and an auto tint specialist will be in contact with you soon with any questions you may have.</p>
         <div id='contact-us-form-container'>
           <br>
-          <form>
-            <div class='float-left'>
-              <p>Name</p>
-              <input>
-            </div>
-            <div class='float-right'>
-              <p>Email</p>
-              <input>
-            </div>
-            <div class='clear'></div>
-            <br>
-            <br>
-            <div class='float-left'>
-              <p>Phone</p>
-              <input>
-            </div>
-            <div class='float-right'>
-              <p>Vehicle Make/Model/Year</p>
-              <input>
-            </div>
-            <div class='clear'></div>
-            <br>
-            <br>
-            <p>Message</p>
-            <textarea></textarea>
+          <form action='' method='post'>
+            <fieldset>
+              <ol>
+                <li>
+                  <label for='name'>Name:</label>
+                  <input class='text' name='name' type='text'>
+                </li>
+                <li>
+                  <label for='mail'>email:</label>
+                  <input class='text' name='mail' type='text'>
+                </li>
+                <li>
+                  <label for='body'>Message:</label>
+                  <textarea name='body'></textarea>
+                </li>
+              </ol>
+              <input class='button' type='submit' value='Send'>
+            </fieldset>
           </form>
         </div>
       </div>
     </div>
+    <!-- - data.people.features.each do |feature| -->
+    <!-- .feature -->
+    <!-- %img{:src => "/images/#{feature.image}"} -->
+    <!-- %h3=feature.title -->
+    <!-- %p=feature.text -->
     <div id='footer'>
       <div class='container'>
         <div class='float-left' style='margin-right: 160px;'>
           <h4>Business Information</h4>
           <p>Mon - Sat 9:00 a.m. - 6:00 p.m.</p>
           <br>
-          <p>7522 Slater ave. Suite #115 <br /> Huntington Beach, CA 92647</p>
+          <p>7522 Slater ave. Suite #115</p>
+          <p>Huntington Beach, CA 92647</p>
         </div>
         <div class='float-left'>
           <h4>Contact Us</h4>
