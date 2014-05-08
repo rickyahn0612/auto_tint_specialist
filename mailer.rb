@@ -8,8 +8,27 @@ class MailForms < Sinatra::Base
   end
 
   post '/' do
-    Pony.mail(:to => 'rickyahn0612@yahoo.com', :from => "myemail@onehouse.net", :subject => "art inquiry from ruckus", :body => "sup")
-    redirect '/index.html'
+    name = params[:name]
+
+    Pony.options = {
+      :via => :smtp,
+      :via_options => {
+        :address => 'smtp.gmail.com',
+        :port => '587',
+        :domain => 'localhost.localdomain',
+        :user_name => 'ricky@onehouse.net',
+        :password => 'Dookies1!',
+        :authentication => :plain,
+        :enable_starttls_auto => true
+      }
+    }
+
+    Pony.mail({
+      :to => 'ricky@onehouse.net',
+      :subject => "art inquiry from #{name}",
+      :body => params[:email],
+    })
+    redirect 'contact.html'
   end
 end
 
