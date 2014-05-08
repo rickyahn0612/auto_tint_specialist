@@ -2,7 +2,7 @@
 # Compass
 ###
 
-require 'source/mailer'
+require './mailer'
 map('/contact.html') do
   run MailForms
 end

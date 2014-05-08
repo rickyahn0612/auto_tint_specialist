@@ -25,6 +25,7 @@ class MailForms < Sinatra::Base
 
     Pony.mail({
       :to => 'ricky@onehouse.net',
+      from: params[:email],
       :subject => "art inquiry from #{name}",
       :body => params[:email],
     })
