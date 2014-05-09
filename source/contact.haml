@@ -1,3 +1,31 @@
+/ #top-info-header
+/   .container
+/     - data.business.information.each do |info|
+/       .phone-number.float-left
+/         %i.fa.fa-phone.float-left
+/         %span.float-left= info.phone
+/       .email.float-left
+/         %i.fa.fa-envelope-o.float-left
+/         %span.float-left= info.email
+/       .social-icons.float-right
+/         = info.hours
+/       .clear
+
+/ #main-nav
+/   .container 
+/     #main-logo-container.float-left
+/       = link_to((image_tag 'logo.png'), 'index.html')
+/     #nav-items.float-right
+/       %ul
+/         %li= link_to 'Home', 'index.html'
+/         %li= link_to 'About Us', 'about.html'
+/         %li Services
+/         %li Photo Gallery 
+/         %li Reviews!
+/         %li= link_to 'Contact Us', 'contact.html'
+/     .clear
+/ %link{:rel => :stylesheet, :type => :"text/css", :href => "/stylesheets/all.css"}
+
 #sub-page-header
   .container
     %h1 Contact Us
@@ -8,26 +36,27 @@
 
 #contact-us-container
   .container
-    %h3 Contact Us For A Free Estimate
-    %br
-    %p Please fill out the form to request a free estimate and an auto tint specialist will be in contact with you soon with any questions you may have.
     #contact-us-form-container
       %br
-      %form{action: "", method: "post"}
-        %fieldset
-          %ol
-            %li
-              %label{:for => "name"} Name:
-              %input{:type => "text", :name => "name", :class => "text"}
-            %li
-              %label{:for => "mail"} email:
-              %input{:type => "text", :name => "mail", :class => "text"}
-            %li
-              %label{:for => "body"} Message:
-              %textarea{:name => "body"}
-          %input{:type => "submit", :value => "Send", :class => "button"}
-/ - data.people.features.each do |feature| 
-/   .feature
-/     %img{:src => "/images/#{feature.image}"}
-/     %h3=feature.title
-/     %p=feature.text
+      #wufoo-z1dijskx1vgwkl3
+        Fill out my
+        = succeed "." do
+          %a{href: "https://rickyahn0612.wufoo.com/forms/z1dijskx1vgwkl3"} online form
+      #wuf-adv{style: "font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"}
+      :javascript
+        var z1dijskx1vgwkl3;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'rickyahn0612',
+        'formHash':'z1dijskx1vgwkl3',
+        'autoResize':true,
+        'height':'597',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { z1dijskx1vgwkl3 = new WufooForm();z1dijskx1vgwkl3.initialize(options);z1dijskx1vgwkl3.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');

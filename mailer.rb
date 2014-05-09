@@ -1,13 +1,10 @@
 require 'sinatra/base'
 require 'pony'
 require 'rubygems'
-require 'haml'
-require 'sass'
 
 class MailForms < Sinatra::Base
-  set :views, Proc.new { File.join(root)}
-  get '/' do
-    haml :contact, :layout => :'/contact'
+  get '/contact.html' do
+    'contact.html'
   end
 
   post '/' do

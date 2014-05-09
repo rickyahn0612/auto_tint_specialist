@@ -2,10 +2,11 @@
 # Compass
 ###
 
-require './mailer'
-map('/contact.html') do
-  run MailForms
-end
+# require 'source/mailer'
+# map('/contact.html') do
+#   run MailForms
+# end
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
@@ -40,7 +41,7 @@ end
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-activate :livereload
+# activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -69,7 +70,6 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
-
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
