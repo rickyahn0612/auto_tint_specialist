@@ -1,10 +1,13 @@
 require 'sinatra/base'
 require 'pony'
 require 'rubygems'
+require 'haml'
+require 'sass'
 
 class MailForms < Sinatra::Base
+  set :views, Proc.new { File.join(root)}
   get '/' do
-    haml :contact
+    haml :contact, :layout => :'/contact'
   end
 
   post '/' do
@@ -25,6 +28,7 @@ class MailForms < Sinatra::Base
 
     Pony.mail({
       :to => 'ricky@onehouse.net',
+      from: params[:email],
       :subject => "art inquiry from #{name}",
       :body => params[:email],
     })
