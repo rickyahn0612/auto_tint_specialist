@@ -67,6 +67,7 @@ GEM
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.1.0)
     mime-types (1.25.1)
+    minitest (5.3.1)
     multi_json (1.9.3)
     polyglot (0.3.4)
     pony (1.8)
@@ -118,8 +119,10 @@ DEPENDENCIES
   middleman (~> 3.2.2)
   middleman-gh-pages
   middleman-livereload (~> 3.1.0)
+  minitest
   pony
   puma
+  rack-test
   rake
   sinatra
   wdm (~> 0.1.0)
