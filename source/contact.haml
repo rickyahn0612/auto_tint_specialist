@@ -38,25 +38,54 @@
   .container
     #contact-us-form-container
       %br
-      #wufoo-z1dijskx1vgwkl3
-        Fill out my
-        = succeed "." do
-          %a{href: "https://rickyahn0612.wufoo.com/forms/z1dijskx1vgwkl3"} online form
-      #wuf-adv{style: "font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"}
-      :javascript
-        var z1dijskx1vgwkl3;(function(d, t) {
-        var s = d.createElement(t), options = {
-        'userName':'rickyahn0612',
-        'formHash':'z1dijskx1vgwkl3',
-        'autoResize':true,
-        'height':'597',
-        'async':true,
-        'host':'wufoo.com',
-        'header':'show',
-        'ssl':true};
-        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-        s.onload = s.onreadystatechange = function() {
-        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-        try { z1dijskx1vgwkl3 = new WufooForm();z1dijskx1vgwkl3.initialize(options);z1dijskx1vgwkl3.display(); } catch (e) {}};
-        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-        })(document, 'script');
+      %form#test{action: "/send.php", method: "post"}
+        %fieldset
+          %legend Contact Form
+          %div
+            %label{for: "name_Req"}
+              Name
+              %strong *
+            %input#name_Req{name: "name", title: "Required! Please enter your name", type: "text"}
+          %div
+            %label{for: "contact_Req_Email"}
+              E-mail
+              %strong *
+            %input#contact_Req_Email{name: "email", title: "Required! Please enter a valid email address", type: "text"}
+          %div
+            %label{for: "telephone_Tel"} Telephone
+            %input#telephone_Tel{name: "telephone", title: "Please enter a valid telephone number", type: "text"}
+          %div
+            %label{for: "message_Req"}
+              Message
+              %strong *
+            %textarea#message_Req{cols: "20", name: "message", rows: "5", title: "Required! Please enter your message"}
+          %div
+            %input.button{type: "submit", value: "Send"}
+
+
+
+
+
+
+      / #wufoo-z1dijskx1vgwkl3
+      /   Fill out my
+      /   = succeed "." do
+      /     %a{href: "https://rickyahn0612.wufoo.com/forms/z1dijskx1vgwkl3"} online form
+      / #wuf-adv{style: "font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"}
+      / :javascript
+      /   var z1dijskx1vgwkl3;(function(d, t) {
+      /   var s = d.createElement(t), options = {
+      /   'userName':'rickyahn0612',
+      /   'formHash':'z1dijskx1vgwkl3',
+      /   'autoResize':true,
+      /   'height':'597',
+      /   'async':true,
+      /   'host':'wufoo.com',
+      /   'header':'show',
+      /   'ssl':true};
+      /   s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+      /   s.onload = s.onreadystatechange = function() {
+      /   var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+      /   try { z1dijskx1vgwkl3 = new WufooForm();z1dijskx1vgwkl3.initialize(options);z1dijskx1vgwkl3.display(); } catch (e) {}};
+      /   var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+      /   })(document, 'script');
